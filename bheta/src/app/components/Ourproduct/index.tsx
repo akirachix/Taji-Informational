@@ -30,22 +30,18 @@ const BhetaSolutions = () => {
               Pharmacy Finder
             </h3>
             <p
-              className="text-[20px] md:text-[33px] text-gray-700"
-              style={{ fontFamily: '"Darker Grotesque"' }}
-            >
+              className="text-[20px] md:text-[33px] text-gray-700 darker-grotesque" >
               We help consumers to make the right decision on which pharmacy is licensed for buying drugs.
             </p>
           </div>
           <div className="bg-gray-50 p-6 md:p-8 shadow-xl rounded-lg">
             <h3
-              className="text-[24px] md:text-[40px] font-semibold mb-4 text-gray-900"
-              style={{ fontFamily: '"Darker Grotesque"' }}
-            >
+              className="text-[24px] md:text-[40px] font-semibold mb-4 text-gray-900 darker-grotesque" >
               Upload
             </h3>
             <p
               className="text-[20px] md:text-[33px] text-gray-700 darker-grotesque">
-              We help consumers to identify if the drug is recalled or not, ensuring our consumers' health is safe.
+              We help consumers to identify if the drug is recalled or not, ensuring our consumers health is safe.
             </p>
           </div>
         </div>
