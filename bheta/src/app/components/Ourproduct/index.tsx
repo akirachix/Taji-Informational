@@ -3,7 +3,7 @@ import React from 'react';
 const BhetaSolutions = () => {
   return (
     <div id='ourproduct'>
-    <div className="flex-col items-center  bg-[#FFF9EF] mt-[4%]">
+    <div className="flex-col items-center  bg-[#FFF9EF]">
       <div className=" bg-gray-900 text-white py-8 px-4 md:px-8 text-center">
         <h1
           className="text-[28px] md:text-[48px] font-bold mb-4 darker-grotesque">

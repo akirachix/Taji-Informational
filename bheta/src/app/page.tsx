@@ -1,7 +1,8 @@
-import Image from "next/image";
-import Navbar from "./component/Navbar";
-import BhetaSolutions from "./component/Ourproduct";
-import Homepage from "./component/Homepage";
+import Navbar from "./components/Navbar";
+import BhetaSolutions from "./components/Ourproduct";
+import Homepage from "./components/Homepage";
+import Howitworks from "./components/Howitworks";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -9,8 +10,8 @@ export default function Home() {
      <Navbar/>
      <Homepage/>
      <BhetaSolutions/>
-
-      
+      <Howitworks/>      
+      <Footer/>
     </div>
   );
 }

@@ -26,7 +26,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex space-x-24 font-bold text-black mr-[5%] text-[20px] mt-[4%] md:mb-[3%] darker-grotesque" >
             <a href="#home" className="text-red-500">Home</a>
-            <a href="about" className="text-black">About Us</a>
+            <a href="#about" className="text-black">About Us</a>
             <a href="#ourproduct" className="text-black">Our Product</a>
             <a href="#contactus" className="text-black">Contact Us</a>
             <a href="#faqs" className="text-black">FAQs</a>
