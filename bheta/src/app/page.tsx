@@ -3,15 +3,21 @@ import BhetaSolutions from "./components/Ourproduct";
 import Homepage from "./components/Homepage";
 import Howitworks from "./components/Howitworks";
 import Footer from "./components/Footer";
+import FaqSection from "@/app/components/Faqs";
+import Contact from "./components/Contact_us";
+
+
 
 export default function Home() {
   return (
-    <div>
+    <main>
      <Navbar/>
      <Homepage/>
      <BhetaSolutions/>
-      <Howitworks/>      
+      <Howitworks/> 
+      <Contact/>
+      <FaqSection/>     
       <Footer/>
-    </div>
+    </main>
   );
 }
