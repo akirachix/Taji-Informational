@@ -2,7 +2,9 @@
 
 
 const Howitworks = () => {
+  
     return (
+      <div id="about">
       <main className="flex flex-col justify-center items-center px-4 py-8">
   
         <div>
@@ -13,25 +15,26 @@ const Howitworks = () => {
   
           <div className="flex flex-col items-center font-Darker Grotesque">
             <img src="/images/drug.png" alt="" className="h-64 w-64 lg:w-72 lg:h-80 sm:h-60 sm:w-60 object-contain m" />
-            <p className="text-lg mt-6 md:text-xl">1. Drug QR Code</p>
+            <p className="text-lg mt-6 md:text-[24px]">1. Drug QR Code</p>
           </div>
           
           
           <div className="flex flex-col items-center font-Darker Grotesque">
             <img src="/images/scan.png"alt="" className="h-64 w-64 lg:w-72 lg:h-80 sm:h-60 sm:w-60  mr-3.5 object-contain  " />
-            <p className="text-lg mt-6 md:text-xl">2. Scan QR Code</p>
+            <p className="text-lg mt-6 md:text-[24px]">2. Scan QR Code</p>
           </div>
   
   
           <div className="flex flex-col items-center">
             <img src="/images/feedback.png" alt="" className="h-64 w-64 lg:w-72 lg:h-80 sm:h-60 sm:w-60 object-contain "  />
-            <p className="text-lg mt-6  font-Darker Grotesque md:text-xl" >3. Receive a Message</p>
+            <p className="text-lg mt-6  font-Darker Grotesque  md:text-[24px]" >3. Receive a Message</p>
           </div>
   
         </div>
        
         </div>
       </main>
+      </div>
     );
   };
   
