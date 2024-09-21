@@ -1,3 +1,4 @@
+import Image from "next/image";
 const Footer = () => {
     return (
         
@@ -7,13 +8,13 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-lg md:text-xl lg:text-2xl">
   
                     <div className="flex justify-center md:justify-start mb-4 md:mb-0">
-                        <img src="/images/image.png" alt="Logo" className="w-full h-10" />
+                        <Image src="/images/image.png" alt="Logo" className="w-full h-10" />
                     </div>
   
                     <div className="flex justify-center space-x-4 mb-4 md:mb-0">
-                        <img src="/images/facebook.png" alt="" className="w-7 h-7" />
-                        <img src="/images/instagram .png" alt="" className="w-7 h-7" />
-                        <img src="/images/linkedin .png" alt="" className="w-7 h-7 mt-0.5" />
+                        <Image src="/images/facebook.png" alt="" className="w-7 h-7" />
+                        <Image src="/images/instagram .png" alt="" className="w-7 h-7" />
+                        <Image src="/images/linkedin .png" alt="" className="w-7 h-7 mt-0.5" />
                     </div>
   
                     <div className="text-center md:text-left darker-grotesque md:text-2xl md:leading-10">
