@@ -30,9 +30,9 @@ const faqData = [
 ];
 
 const FaqSection = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState< number | null>(null);
 
-  const toggleFaq = (index: any) => {
+  const toggleFaq = (index: number) => {
     setOpenIndex(index === openIndex ? null : index);
   };
 

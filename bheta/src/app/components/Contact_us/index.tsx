@@ -4,19 +4,25 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import { unknown } from 'zod';
 import { userMessage } from '@/app/utils/fetchForm';
 
 
 
+
+type FormData = {
+    email: string;
+    phonenumber: string;
+    message: string;
+  };
+
 const schema = yup.object({
   email: yup.string().email('Invalid email address').required('Email is required'),
-  phone: yup.string().matches(/^[0-9]+$/, 'Must be only digits').min(10, 'Must be at least 10 digits').required('Phone number is required'),
+  phonenumber: yup.string().matches(/^[0-9]+$/, 'Must be only digits').min(10, 'Must be at least 10 digits').required('Phone number is required'),
   message: yup.string().required('Message is required').min(10, 'Message must be at least 10 characters'),
 }).required();
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
     resolver: yupResolver(schema),
     mode: 'onTouched',
   });
@@ -24,7 +30,7 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formError, setFormError] = useState("");
 
-  const onSubmit = async (data: any) => {
+   const onSubmit = async (data: FormData) => {
     try {
       await userMessage(data);  
       setIsSubmitted(true);
@@ -91,10 +97,10 @@ const Contact = () => {
                 <input
                   type="tel"
                   id="phone"
-                  {...register('phone')}
+                  {...register('phonenumber')}
                   className="w-full border border-gray-300 rounded px-3 py-2 text-black"
                 />
-                {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone?.message}</p>}
+                {errors.phonenumber && <p className="text-red-500 text-sm mt-1">{errors.phonenumber?.message}</p>}
               </div>
             </div>
 
