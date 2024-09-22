@@ -7,9 +7,9 @@ const Homepage = ()  => {
     <div id="home">    
     
       <main>     
-        <div  className="flex flex-col md:flex-row bg-[#FFF9EF] items-center p-4 md:p-8">
+        <div  className="flex flex-col h-screen md:flex-row bg-[#FFF9EF] items-center p-4 md:p-8">
 
-          <div className="flex-1 ml-[5%] md:ml-[5%] mr-[5%] mt-[6%] md:mb-[8%] flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex-1 ml-[5%] md:ml-[5%] mr-[5%] mt-[4%] md:mb-[8%] flex flex-col items-center md:items-start text-center md:text-left">
             <h1 className="text-[30px] md:text-[60px] font-bold mt-8"
                style={{ color: '#031730', fontFamily: '"Darker Grotesque"' }} >
               Upload Now, Stay Safe!
